@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Bootstrap 3 Carousel</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<style type="text/css">
+    /* Tell the browser to render HTML 5 elements as block */
+header, footer, aside, nav, article {
+    display: block;
+}
+ 
+body {
+    margin: 0 auto;
+    width: 940px;
+    font: 13px/22px Helvetica, Arial, sans-serif;
+    background: #f0f0f0;
+}
+h2{
+    margin: 0;     
+    color: #FFF;
+    padding-top: 80px;
+    font-size: 28px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    
+    background: #333;      
+    text-align: center;
+    height: 500px !important;
+    background-size:100%
+}
+.carousel{
+    margin-top: 200px;
+}
+.bs-example{
+	margin: 20px;
+}
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        float: center;
+        width: 100px;
+        text-align: center;
+        line-height: 21px;
+    }
+    ul li a{
+        display: block;
+        padding: 5px 10px;
+        color: #333;
+        background: #f2f2f2;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul{
+        display: none;
+    }
+    ul li:hover ul{
+        display: block; /* display the dropdown */
+    }
+       .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+    }
+        
+div {
+    background-color: #b0c4de;
+}
+p {
+    color: #00ff00;
+}
+ nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: url("nav_background");
+}   
+
+
+</style>
+</head>
+<body>
+    <p id="demo"></p>
+
+<script>
+var d = new Date();
+d.setDate(d.getDate() + 50);
+document.getElementById("demo").innerHTML = d;
+</script>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+   <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="color:#CC0000">LaBellaFashion</a>
+    </div>
+    <div class="container-fluid">            
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>    
+    <div> 
+       <ul class="nav nav-tabs">        
+        <li class="active">
+            <a href="#"><Strong>HOME</Strong></a></li>
+        <li>
+            <a href="#"><Strong>WOMEN</Strong></a>
+              <ul>
+                <li><a href="#">LACES & PRINTS</a></li>
+                <li><a href="#">FASHIONABLE FLOWERS</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">SLEEPY SLUMBERS</a></li>
+                <li><a href="#">FIT & FRESH</a></li>           
+             </ul>
+        </li>
+           
+        <li>
+            <a href="#"><Strong>KIDS</Strong></a>
+             <ul>
+                <li><a href="#">GIRLS</a></li>
+                <li><a href="#">BOYS</a></li>
+                <li><a href="#">PLAYTIME</a></li>
+                <li><a href="#">SLEEPY SLUMBERS</a></li>
+                
+              </ul>
+        </li>
+        <li>
+            <a href="#"><Strong>MEN</Strong> </a>
+            <ul>
+                <li><a href="#">COMFORTABLY COOL</a></li>
+                <li><a href="#">FORMALLY INFORMAL</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+            </ul>
+        </li>
+        <li><a href="#"><Strong>CATALOG</Strong></a></li>        
+               
+    </ul>
+      </div>
+  </div>
+   </nav>
+<section id="comments">
+    <header>
+        <h3>Comments</h3>
+    </header>
+    <aside>
+      <div class="center-bloc">
+	<h2>Women's<span>Collection</span></h2>
+
+	<p>Put a spring in your step with Redtag’s stunning new collection. Set sail in nautical stripes, take a trip back to the seventies in Paisley prints and come over all contemporary in pretty florals and sugary sweet pastels.</p>
+      </div>
+    </aside>
+    <article>
+        <header>
+            <a href="#">George Washington</a> on <time datetime="2009-06-29T23:35:20+01:00">June 29th 2009 at 23:35</time>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+    </article>
+    <article>
+        <header>
+            <a href="#">Benjamin Franklin</a> on <time datetime="2009-06-29T23:40:09+01:00">June 29th 2009 at 23:40</time>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+    </article>
+</section>
+ 	  
+ <!-- <div class="bs-example">-->
+    <div class="container">
+  <br>
+  <div class ="bs-example">
+  <div id="myCarousel" class="carousel slide"  data-intterval="500" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="active item">
+          <div class="carousel-caption">
+            <img src="showroom8.jpeg" width="400" height="280">
+          </div>
+      </div>
+
+      <div class="item">
+          <div class="carousel-caption">
+            <img src="THUMB[2].jpg" alt="Flower" width="410" height="300">
+          </div>
+      </div>
+    
+      <div class="item">
+          <div class="carousel-caption">
+           <img src="THUMB[6].jpg" alt="Flower" width="410" height="300">
+          </div>
+      </div>
+
+      <div class="item">
+          <div class="carousel-caption">
+             <img src="THUMB[3].jpg" alt="Flower" width="410" height="300">
+          </div>
+      </div>
+    </div>
+    
+       <!-- Left and right controls -->
+     <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+   </div>
+</div> 
+    </div>
+  <section id="comments">
+    <header>
+        <h3>Comments</h3>
+    </header>
+    <article>
+        <header>
+            <a href="#">George Washington</a> on <time datetime="2009-06-29T23:35:20+01:00">June 29th 2009 at 23:35</time>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+    </article>
+    <article>
+        <header>
+            <a href="#">Benjamin Franklin</a> on <time datetime="2009-06-29T23:40:09+01:00">June 29th 2009 at 23:40</time>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+    </article>
+</section>
+   </body>
+</html>                                		

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="category/Create.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="index.jsp" x="400" y="750" zoom="true"/>
+        <Node id="customer/List.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="template.xhtml" x="1400" y="300" zoom="true"/>
+        <Node id="newjsp.jsp" x="400" y="600" zoom="true"/>
+        <Node id="product/List.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="text2.jsp" x="150" y="900" zoom="true"/>
+        <Node id="customer/View.xhtml" x="900" y="450" zoom="true"/>
+        <Node id="product/View.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="customer/Create.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="customer/Edit.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="text.jsp" x="150" y="750" zoom="true"/>
+        <Node id="product/Create.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="image.html" x="1400" y="150" zoom="true"/>
+        <Node id="images/boys.html" x="650" y="750" zoom="true"/>
+        <Node id="images/products.html" x="1150" y="450" zoom="true"/>
+        <Node id="category/List.xhtml" x="400" y="900" zoom="true"/>
+        <Node id="product/Edit.xhtml" x="900" y="600" zoom="true"/>
+        <Node id="category/View.xhtml" x="1650" y="150" zoom="true"/>
+        <Node id="images/newhtml.html" x="650" y="600" zoom="true"/>
+        <Node id="images/girls.html" x="150" y="150" zoom="true"/>
+        <Node id="test/testDatasource.jsp" x="1150" y="150" zoom="true"/>
+        <Node id="images/comfortably.html" x="900" y="300" zoom="true"/>
+        <Node id="images/product.html" x="1150" y="300" zoom="true"/>
+        <Node id="images/catalog.html" x="1900" y="150" zoom="true"/>
+        <Node id="index.xhtml" x="150" y="1050" zoom="true"/>
+        <Node id="rating.html" x="400" y="150" zoom="true"/>
+        <Node id="images/formally.html" x="650" y="450" zoom="true"/>
+        <Node id="images/fashionable.html" x="400" y="300" zoom="true"/>
+        <Node id="category/Edit.xhtml" x="1650" y="300" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

@@ -1,0 +1,17 @@
+
+         
+body { columns: 2 12em
+       column-gap: 1em;
+       column-rule-width: thin;
+       column-rule-style: solid;
+       column-rule-color: black; }
+
+.center {
+         color: red;
+         text-align: center;
+}
+p.main {
+        text-align: center; 
+        color: red;
+}
+   

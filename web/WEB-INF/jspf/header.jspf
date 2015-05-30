@@ -1,0 +1,67 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/StyleSheet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <title>Welcome to La Bella Fashion</title>
+    </head>
+ <body>      
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+           <div class="container-fluid">
+              <div class="navbar-header">     
+                  <img src="images/labella.jpg" id="logo" alt="La Bella Fashion logo">       
+              </div>   
+        <div>   
+           <ul class="nav navbar-nav navbar-left">        
+                <li class="active">
+                   <a href="index.jsp"><Strong>WOMEN</Strong></a>
+                   <ul>
+                        <li><a href="images/product.html">LACES & PRINTS</a></li>
+                        <li><a href="images/fashionable.html">FASHIONABLE FLOWERS</a></li>
+                        <li><a href="images/work.html">WORK</a></li>                          
+                   </ul>
+                </li>  
+                <li>
+                      <a href="index.jsp"><strong>KIDS</strong></a>
+                    <ul>
+                      <li><a href="images/girls.html">GIRLS</a></li>
+                      <li><a href="images/boys.html">BOYS</a></li>
+                   </ul>
+                </li>
+                <li>
+                     <a href="index.jsp"><strong>MEN</strong> </a>
+                   <ul>
+                     <li><a href="images/comfortably.html">COMFORTABLY COOL</a></li>
+                     <li><a href="images/formally.html">FORMALLY INFORMAL</a></li>
+                   </ul>
+            
+                </li> 
+                <li>
+                       <a href="toOrder"><strong>WHERE TO BUY</strong></a>
+                </li>
+                <li>
+                      <a href="visit"><strong>VISIT US</strong></a>
+               </li>
+         </ul>
+   </div>       
+               
+       <div class="footer1">           
+            <form method="POST" action="searchServlet">
+                <input type="text"  name="keyword" id="keyword" placeholder="Search..." required>
+                <input type="Submit" name="submit" value="Search">
+            </form>
+      </div>
+        <ul> 
+                <li class="signup"><a href="signupForm"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                <li class="login"><a href="login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+        </ul> 
+   </div>     
+ </nav>
+   
